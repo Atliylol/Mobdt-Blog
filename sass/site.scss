@@ -1,1 +1,66 @@
-@import "style";
+$background-default-size: 3cm;
+$background-default-color: rgb(15, 12, 73);
+
+@font-face {
+	font-family: textbox;
+	src: url('./Super-Mario-64-DS.ttf');
+}
+@font-face {
+	font-family: msn;
+	src: url('./arial-pixel-11.ttf');
+}
+
+html {
+	margin: 1cm;
+	image-rendering: pixelated;
+	background: url("./bg.png");
+	background-color: $background-default-color;
+	background-blend-mode: screen;
+
+	background-size: $background-default-size;
+
+	animation: bgAnim 4s linear 0s infinite normal forwards;
+
+	@keyframes bgAnim {
+		0% {background-position: 0cm 0cm;}
+		100% {background-position: $background-default-size $background-default-size;}
+	}
+
+	font-family: textbox;
+	color: whitesmoke;
+	text-shadow: 0px 0px 4px #000000;
+}
+
+h1 {
+	text-align: center;
+}
+
+hr {
+	border-width: 2px;
+}
+
+.pagelink {
+	margin: auto;
+	width: 50%;
+
+	color: whitesmoke;
+	text-shadow: 0px 0px 0px #000000;
+
+	background-color: #cbcbcb;
+	border: 4px solid rgb(51, 51, 51);
+	border-radius: .25cm;
+	padding: 10px;
+	
+	a {
+		text-decoration: none;
+		transition: all .3s;
+	}
+	a:hover {
+		color: blue;
+		font-size: 18px;
+	}
+}
+
+.center {
+	text-align: center;
+}

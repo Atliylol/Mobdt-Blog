@@ -1,2 +1,3 @@
 # Mobdt-Blog
-blog for mobdt :)))
+<hr>
+**REALLY** wip blog for Mobdt

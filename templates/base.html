@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <title>Mobdt Blog</title>
   
-  <link rel="stylesheet" href="https://raw.githubusercontent.com/Atliylol/Mobdt-Blog/main/sass/style.scss"/>
+  {% block css %}
+  <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
+  {% endblock css %}
+
   <link rel="icon" href="https://raw.githubusercontent.com/Atliylol/Mobdt-Blog/main/static/favicon.png" type="image/x-icon">
 </head>
 

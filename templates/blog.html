@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block content %}
+
+<p style="position: absolute;top: 1cm;left: 1.25cm;right: 0px;">Click <a href="{{ get_url(path='') }}">here</a> to go home.</p>
+
+<h1 class="title">
+    {{ section.title }}
+</h1>
+
+<hr>
+
+<ul>
+    <style>
+        #date {
+            font-size: xx-small;
+            color: rgb(51, 51, 51);
+        }
+    </style>
+    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
+    {% for page in section.pages %}
+    <section class="pagelink">
+        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+        <p id="date">{{ page.date }}</p>
+    </section>
+    {% endfor %}
+</ul>
+{% endblock content %}

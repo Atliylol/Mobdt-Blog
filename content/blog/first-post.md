@@ -2,6 +2,7 @@
 title = "First post ever"
 date = 2023-01-20
 updated = 2023-01-21
+author = "atliylol"
 +++
 
 ## Hello everyone!
@@ -13,6 +14,7 @@ updated = 2023-01-21
 ---
 
 Yeah i'm going to post progress, news and stuff about Mobdt here since twitter bad
+
 Also this blog is still in W.I.P so don't expect too much of it for now... but just for now 👻👻
 
 I personally don't like comments because i like to say whatever i want and people just accept it ok? <p style="font-size: 8px;">"yes!" you said.</p>

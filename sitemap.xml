@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://atliylol.github.io/Mobdt-Blog/</loc>
+    </url>
+    <url>
+        <loc>https://atliylol.github.io/Mobdt-Blog/blog/</loc>
+    </url>
+    <url>
+        <loc>https://atliylol.github.io/Mobdt-Blog/blog/devlog-1/</loc>
+        <lastmod>2023-01-22</lastmod>
+    </url>
+    <url>
+        <loc>https://atliylol.github.io/Mobdt-Blog/blog/first-post/</loc>
+        <lastmod>2023-01-21</lastmod>
+    </url>
+</urlset>

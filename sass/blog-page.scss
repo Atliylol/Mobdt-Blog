@@ -1,12 +1,8 @@
 @import "site";
+@import "fonts";
 
-@font-face {
-	font-family: textbox;
-	src: url('./Super-Mario-64-DS.ttf');
-}
-@font-face {
-	font-family: msn;
-	src: url('./arial-pixel-11.ttf');
+img:not(.emoji){
+	border-radius: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,4 +10,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, a, em, strong {
 	font-family: msn;
+}
+
+sub {
+	position: relative;
+	bottom: 20px;
+}
+
+.emoji {
+	position: relative;
+	top: 4px;
+	width: 19px;
+}
+
+curse {
+	color: black;
+	background-color: black;
 }

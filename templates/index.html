@@ -2,18 +2,56 @@
 
 <head>
     <title>{{ section.description}}</title>
+    <style>
+        .soul {
+            transform-origin: 213px 43px;
+            animation: soulike-animation 2s cubic-bezier(0.35, 0, 0.6, 1) 0s infinite alternate forwards, rgb 4s linear 0s infinite normal forwards;
+
+            margin-top: 45px;
+        }
+        button {
+            padding: 16px 36px;
+
+            font-family: msn;
+            font-size: 16px;
+
+            background-color: #888da5;
+            border-width: 6px;
+            border-color: #494B5E;
+            border-style: outset;
+
+            transition: all 50ms;
+
+            box-shadow: 2px 2px 4px #000000;
+        }
+        button:hover {
+            font-size: 17px;
+            border-color: #5a5d7e;
+            padding: 17px 37px;
+        }
+        button:focus {
+            font-size: 10px;
+            background-color: #70758e;
+            border-color: #36384f;
+        }
+
+        @keyframes soulike-animation {
+            0% {rotate: -17deg;}
+            100% {rotate: 17deg;}
+        }
+        @keyframes rgb {
+            0% {filter: hue-rotate(0deg);}
+            100% {filter: hue-rotate(360deg);}
+        }
+    </style>
 </head>
 
-<h1 class="title">
-    {{ section.title }}
-</h1>
+<img src="./mobdt-soul-text.png" alt="mobdt's" class="soul center">
+<p style="font-size: 30px;" class="center">Official blog</p>
+
+<form action="{{ get_url(path='@/blog/_index.md') }}">
+    <button class="center">Blog</button>
+</form>
 
 
-
-{{ section.content | safe }}
-
-
-
-
-<p>Click <a href="{{ get_url(path='@/blog/_index.md') }}">here</a> to see my posts.</p>
 {% endblock content %}
